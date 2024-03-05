@@ -11,10 +11,8 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", grade=" + grade +
-                '}';
+        return "Studentul cu numele " + name +
+                ", are nota " + grade ;
     }
 
 }

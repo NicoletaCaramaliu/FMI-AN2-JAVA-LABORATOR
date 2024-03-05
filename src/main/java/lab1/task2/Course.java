@@ -1,10 +1,12 @@
 package lab1.task2;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.Random;
 
 @Data
+@AllArgsConstructor
 public class Course {
     private String name;
     private double minimumGrade;
@@ -20,8 +22,17 @@ public class Course {
 
     public Student[] showAllPassingStudents()
     {
-        Student[] passingStudents = new Student[students.length];
         int index = 0;
+        for (Student student : students)
+        {
+            if (student.getGrade() >= minimumGrade)
+            {
+                index++;
+            }
+        }
+        Student[] passingStudents = new Student[index];
+
+        index = 0;
         for (Student student : students)
         {
             if (student.getGrade() >= minimumGrade)

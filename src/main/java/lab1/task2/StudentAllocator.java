@@ -12,12 +12,13 @@ public class StudentAllocator {
     }
 
     private static Student createRandomStudent() {
-        String[] names = {"Amalia", "Bianca", "Cosmin", "David", "Eva"};
-        Random random = new Random();
+        String[] names = {"Amalia", "Bianca", "Cosmin", "David", "Eva", "Marian", "Delia", "Andrei", "Ioana", "George"};
+                Random random = new Random();
 
         String randomName = names[random.nextInt(names.length)];
         double randomGrade = 5.0 + random.nextDouble() * (10.0 - 5.0);
 
         return new Student(randomName, randomGrade);
+
     }
 }
