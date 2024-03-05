@@ -9,7 +9,7 @@ public class DummyCalculator {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.print("Introduceți expresia (sau 'quit' pentru a ieși): ");
+            System.out.print("Introduceti expresia (sau 'quit' pentru a iesi): ");
             String input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("quit")) {
@@ -70,7 +70,7 @@ public class DummyCalculator {
                     if (doubleOperand2 != 0) {
                         return doubleOperand1 / doubleOperand2;
                     } else {
-                        throw new ArithmeticException("Imparțire la zero!");
+                        throw new ArithmeticException("Impartire la zero!");
                     }
                 default:
                     throw new IllegalArgumentException("Operator nesuportat: " + operator);
@@ -87,7 +87,7 @@ public class DummyCalculator {
                     if ((Integer) operand2 != 0) {
                         return (Integer) operand1 / (Integer) operand2;
                     } else {
-                        throw new ArithmeticException("Împărțire la zero!");
+                        throw new ArithmeticException("Imparțire la zero!");
                     }
                 case "%":
                     return (Integer) operand1 % (Integer) operand2;
@@ -104,7 +104,7 @@ public class DummyCalculator {
                     throw new IllegalArgumentException("Operator nesuportat: " + operator);
             }
         } else {
-            throw new IllegalArgumentException("Tipuri de operand incompatibile: " + operand1.getClass() + " și " + operand2.getClass());
+            throw new IllegalArgumentException("Tipuri de operand incompatibile: " + operand1.getClass() + " si " + operand2.getClass());
         }
     }
 
