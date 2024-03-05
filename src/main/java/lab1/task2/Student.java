@@ -1,21 +1,13 @@
 package lab1.task2;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class Student {
-    String name;
-    double grade;
-
-    public Student(String name, double grade) {
-        this.name =  name;
-        this.grade = grade;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public double getGrade() {
-        return grade;
-    }
+    private String name;
+    private double grade;
 
     @Override
     public String toString() {
@@ -24,7 +16,5 @@ public class Student {
                 ", grade=" + grade +
                 '}';
     }
-
-
 
 }

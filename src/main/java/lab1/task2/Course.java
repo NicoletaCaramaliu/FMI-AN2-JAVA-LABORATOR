@@ -1,16 +1,15 @@
 package lab1.task2;
 
+import lombok.Data;
+
 import java.util.Random;
+
+@Data
 public class Course {
     private String name;
     private double minimumGrade;
     private Student[] students;
 
-    public Course(String name, double minimumGrade, Student[] students) {
-        this.name = name;
-        this.minimumGrade = minimumGrade;
-        this.students = students;
-    }
 
     public Student chooseStudentRandomly()
     {
