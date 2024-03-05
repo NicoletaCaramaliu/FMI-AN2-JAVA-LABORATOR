@@ -87,7 +87,7 @@ public class DummyCalculator {
                     if ((Integer) operand2 != 0) {
                         return (Integer) operand1 / (Integer) operand2;
                     } else {
-                        throw new ArithmeticException("Imparțire la zero!");
+                        throw new ArithmeticException("Impartire la zero!");
                     }
                 case "%":
                     return (Integer) operand1 % (Integer) operand2;
