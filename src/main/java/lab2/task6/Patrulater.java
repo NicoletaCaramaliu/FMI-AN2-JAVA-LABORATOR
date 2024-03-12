@@ -63,7 +63,7 @@ class Dreptunghi extends Paralelogram{
     public Dreptunghi(int latura1, int latura2){
         super(latura1, latura2, 90);
     }
-
+    @Override
     public double Aria(){
         return latura1*latura2;
     }
@@ -73,6 +73,7 @@ class Patrat extends Dreptunghi{
     public Patrat(int latura){
         super(latura, latura);
     }
+    @Override
     public double Aria(){
         return latura1*latura1;
     }
