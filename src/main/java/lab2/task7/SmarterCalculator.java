@@ -194,7 +194,7 @@ class SmarterCalculator {
 
 class Main {
     public static void main(String[] args) {
-        String[] input = {
+        String[] inputArray = {
                 "1", "+", "2",
                 "2", "*", "5",
                 "1", "+", "5.0",
@@ -202,7 +202,12 @@ class Main {
                 "10.0", "/", "1"
         };
 
-        List<CalculatorResult> calculationResults = SmarterCalculator.calculate(input);
+        // Apelăm funcția foo cu array-ul de string-uri ca argument
+        foo(inputArray);
+    }
+
+    public static void foo(String[] args) {
+        List<CalculatorResult> calculationResults = SmarterCalculator.calculate(args);
 
         for (CalculatorResult result : calculationResults) {
             CalculatorRequest request = result.getRequest();
