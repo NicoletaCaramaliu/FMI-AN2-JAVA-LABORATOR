@@ -2,16 +2,9 @@ package lab3.task7;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
-import java.util.Spliterator;
-import java.util.function.Consumer;
-import java.util.function.IntFunction;
-import java.util.function.Predicate;
-import java.util.function.UnaryOperator;
-import java.util.stream.Stream;
 
 public class UniqueList<T> implements List<T> {
 
@@ -19,6 +12,7 @@ public class UniqueList<T> implements List<T> {
 
     public UniqueList() {
         storage = new ArrayList<>();
+
     }
 
     @Override
@@ -62,7 +56,7 @@ public class UniqueList<T> implements List<T> {
     @Override
     public boolean add(T t) {
         if (storage.contains(t)) {
-            throw new IllegalArgumentException("Element already exists");
+            return false;
         }
         return storage.add(t);
     }
@@ -125,17 +119,29 @@ public class UniqueList<T> implements List<T> {
 
     @Override
     public T set(int index, T element) {
-        throw new UnsupportedOperationException();
+        if (index < 0 || index >= storage.size()) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+        if (storage.contains(element)) {
+            throw new IllegalArgumentException("Element already exists");
+        }
+        return storage.set(index, element);
     }
 
     @Override
     public void add(int index, T element) {
-        throw new UnsupportedOperationException();
+        if (index < 0 || index > storage.size()) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+        if (storage.contains(element)) {
+            throw new IllegalArgumentException("Element already exists");
+        }
+        storage.add(index, element);
     }
 
     @Override
     public T remove(int index) {
-        throw new UnsupportedOperationException();
+        return storage.remove(index);
     }
 
     @Override
