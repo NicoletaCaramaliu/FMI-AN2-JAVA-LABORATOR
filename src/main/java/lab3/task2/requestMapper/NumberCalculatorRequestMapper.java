@@ -1,7 +1,7 @@
-package lab3.task6.requestMapper;
+package lab3.task2.requestMapper;
 
 
-import lab3.task6.CalculationRequest;
+import lab3.task2.CalculationRequest;
 
 import java.util.Arrays;
 import java.util.List;

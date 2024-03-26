@@ -1,4 +1,4 @@
-package lab3.task6;
+package lab3.task2;
 
 public record CalculationRequest(Object leftOperand, Object rightOperand, String operation) {
 

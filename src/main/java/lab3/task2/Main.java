@@ -1,6 +1,6 @@
-package lab3.task6;
+package lab3.task2;
 
-import lab3.task6.calculatorResult.CalculationResult;
+import lab3.task2.calculatorResult.CalculationResult;
 
 import java.util.List;
 
@@ -12,6 +12,7 @@ public class Main {
                 "1", "+", "5.0",
                 "1.0", "-", "2",
                 "10.0", "/", "1",
+                "true", "&&", "false",
         };
 
         runSmarterCalculator(args);

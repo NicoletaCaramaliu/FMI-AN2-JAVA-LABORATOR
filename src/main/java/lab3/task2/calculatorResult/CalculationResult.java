@@ -1,6 +1,6 @@
-package lab3.task6.calculatorResult;
+package lab3.task2.calculatorResult;
 
-import lab3.task6.CalculationRequest;
+import lab3.task2.CalculationRequest;
 
 public abstract class CalculationResult {
     private final CalculationRequest request;

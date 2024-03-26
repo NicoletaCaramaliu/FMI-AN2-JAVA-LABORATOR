@@ -1,10 +1,10 @@
-package lab3.task6;
+package lab3.task2;
 
 
-import lab3.task6.requestMapper.BooleanCalculatorRequestMapper;
-import lab3.task6.requestMapper.CalculatorRequestMapper;
-import lab3.task6.requestMapper.DoubleCalculatorRequestMapper;
-import lab3.task6.requestMapper.IntegerCalculatorRequestMapper;
+import lab3.task2.requestMapper.BooleanCalculatorRequestMapper;
+import lab3.task2.requestMapper.CalculatorRequestMapper;
+import lab3.task2.requestMapper.DoubleCalculatorRequestMapper;
+import lab3.task2.requestMapper.IntegerCalculatorRequestMapper;
 
 import java.util.ArrayList;
 import java.util.Arrays;

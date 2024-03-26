@@ -1,10 +1,10 @@
-package lab3.task6;
+package lab3.task2;
 
 
-import lab3.task6.calculatorResult.BooleanCalculationResult;
-import lab3.task6.calculatorResult.CalculationResult;
-import lab3.task6.calculatorResult.DoubleCalculationResult;
-import lab3.task6.calculatorResult.IntegerCalculationResult;
+import lab3.task2.calculatorResult.BooleanCalculationResult;
+import lab3.task2.calculatorResult.CalculationResult;
+import lab3.task2.calculatorResult.DoubleCalculationResult;
+import lab3.task2.calculatorResult.IntegerCalculationResult;
 
 import java.util.List;
 import java.util.stream.Collectors;

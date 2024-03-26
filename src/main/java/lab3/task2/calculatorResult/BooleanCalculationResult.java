@@ -1,8 +1,8 @@
-package lab3.task6.calculatorResult;
+package lab3.task2.calculatorResult;
 
-import lab3.task6.CalculationRequest;
+import lab3.task2.CalculationRequest;
 
-public final class BooleanCalculationResult extends CalculationResult {
+public class BooleanCalculationResult extends CalculationResult {
     public BooleanCalculationResult(CalculationRequest request) {
         super(request);
     }
